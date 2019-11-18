@@ -19,9 +19,15 @@ client.on('message', message => {
         let players = message.mentions.members;
         players.set(message.member.user.id, message.member);
 
-        let winner = players.random();
+        if (players.length == 1) {
+            return message.channel.send(`You're alone in the octogone...`);
+        }
 
-        return message.channel.send(`${winner.nickname || winner.user.username} won!`)
+        if (players.length > 1) {
+            let winner = players.random();
+
+            return message.channel.send(`${winner.nickname || winner.user.username} won!`);
+        }
     }
 });
 
