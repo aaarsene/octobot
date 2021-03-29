@@ -1,10 +1,11 @@
 {
   "name": "octobot",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "discord.js": "^11.6.4"
+    "discord.js": "^12"
   },
   "scripts": {
     "start": "node app.js"
