@@ -1,4 +1,4 @@
-const places = ['Gare du Nord (Paris)', 'Place Saint Pierre (Toulouse)', 'Chez Zekth', 'Part-Dieu (Lyon)'];
+const places = ['Gare du Nord (Paris)', 'Place Saint Pierre (Toulouse)', 'Chez Zekth', 'Part-Dieu (Lyon)', 'Nation'];
 function rnJesus(max) {
     return Math.floor(Math.random() * Math.floor(max))
 }
